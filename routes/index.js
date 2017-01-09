@@ -3,6 +3,7 @@ var router = express.Router();
 var mongo = require('mongodb');
 var db = require('monk')('localhost/nodeblog');
 
+
 // Homepage Blog Posts
 router.get('/', function(req, res, next) {
   var db = req.db;
